@@ -7,3 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+# hb = MenuItem.new
+# hb.title = "hamburger"
+# hb.price = "6.50"
+# hb.food_type = "burger"
+# hb.ingredients = "Beef Patty, Tomato, Lettuce, Onion, Cheese, Beetroot, BBQ Sauce"
+# hb.img_source = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/hamburger_1f354.png"
+# hb.available = true
+# hb.save
