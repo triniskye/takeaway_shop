@@ -15,3 +15,12 @@
 # hb.img_source = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/hamburger_1f354.png"
 # hb.available = true
 # hb.save
+
+# hb = MenuItem.new
+# hb.title = "chicken burger"
+# hb.price = "7.00"
+# hb.food_type = "burger"
+# hb.ingredients = "Crumbed Chicken Fillet, Tomato, Lettuce, Cheese, Beetroot, Garlic Aioli"
+# hb.img_source = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/hamburger_1f354.png"
+# hb.available = true
+# hb.save

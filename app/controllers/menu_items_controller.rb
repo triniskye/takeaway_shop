@@ -1,4 +1,5 @@
 class MenuItemsController < ApplicationController
+    skip_before_action :authorized, only: [:show, :show_all]
     def show_all
         items = MenuItem.all
         render json: items.to_json
