@@ -43,4 +43,12 @@ class ApplicationController < ActionController::API
             render json: { message: 'Please log in' }, status: :unauthorized
         end
     end
+
+    def show_status
+        if current_user
+            render json: {:loggedin => true}
+        else
+            render json: {:loggedin => false}
+        end        
+    end
   end
