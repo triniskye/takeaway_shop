@@ -33,7 +33,6 @@ class ApplicationController < ActionController::API
     end
 
     def logged_in?
-        # checks if current_user is nil or not
         !!current_user
     end
 

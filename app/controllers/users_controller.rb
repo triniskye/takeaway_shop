@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :authorized, only: [:create]
+  skip_before_action :authorized, only: [:create, :update]
 
     def create
         @user = User.create(user_params)
@@ -9,6 +9,19 @@ class UsersController < ApplicationController
             render json: { user: UserSerializer.new(@user), jwt: @token }, status: :created
         else
             render json: { error: "failed to create user" }, status: :unprocessable_entity
+        end
+    end
+    def update
+        user = User.find(params[:id])
+
+        if user.valid?
+            user.update(user_params)
+            render json: user.to_json, status: :ok
+        else
+            render json: {
+                message: 'Failed to update user',
+            },
+            status: :unprocessable_entity
         end
     end
 
